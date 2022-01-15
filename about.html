@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+	<title>Payment Gateway Integration</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0ca17ace72.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="logo.JPG"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-window-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="programs.html">PROGRAM</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+    
+    
+    <!----------About-------->
+    <section class="about">
+        <div class="row">
+            <div class="about-col">
+                <h2>The best charity  to donate.</h2>
+                <p>We work to make immediate and lasting improvements to the lives of people affected by poverty, war and disaster and who have no one else to turn to.Working in dozens of cities, it provides over 250,000 fresh meals each day to those without access to food—and it’s doing this by working with restaurants directly to help them keep their doors open while also nourishing people in need during COVID-19.<br><br>To help curb the spread of COVID-19, created Stay Healthy kits that include standard hygiene products, but also gloves, masks, and bottles of hand sanitizer.Donations to this fund will be used to directly support four other nonprofits on the front lines of the fight against COVID-19.Our workers are building isolation and treatment centers in refugee camps for COVID-19 patients, delivering care packages to the homes of refugees, and opening more health clinics.</p>
+            </div>
+            <div class="about-col">
+                <img src="about.jpg">
+            </div>
+    </section>
+    
+    
+    <!------Footer--------->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Hope and Happiness through your support.<br>Asking for Money is hard, Charitable Charm makes it easy.</p>
+        <div class="icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>                 <i class="fab fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="far fa-heart"></i> by Kartiki Gangthade.</p>
+    </section>
+    <!------Javascript for toogle menu----->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

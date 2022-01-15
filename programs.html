@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+	<title>Payment Gateway Integration</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0ca17ace72.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="logo.JPG"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-window-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="programs.html">PROGRAM</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Programs</h1>
+    </section>
+    
+    
+    <section class="programs">
+        
+        <p>We have several projects running across India.</p>
+        
+        <div class="row">
+            <div class="program-col">
+                <h3>World Central Kitchen</h3>
+                <p>World Central Kitchen (WCK) has served over 25 million meals to the hungry since 2010, and now it’s tackling emergency food relief during a global pandemic.</p>
+            </div>
+            <div class="program-col">
+                <h3>Crisis Text Line</h3>
+                <p>When people need to talk to a crisis counselor ASAP, Crisis Text Line offers free 24/7 support. </p>
+            </div>
+            <div class="program-col">
+                <h3>Heart to Heart International</h3>
+                <p>Heart to Heart International has shipped medical supplies to over 131 countries and given over $2 billion in aid to the less fortunate. </p>
+            </div>
+        </div>
+        <div class="row1">
+            <div class="program-col1">
+                <h3>New York Times Neediest Cases Fund</h3>
+                <p>It has been helping those in need since its inception in  1911. When COVID-19 swept the globe, the Neediest Cases Fund launched a special fundraiser for coronavirus relief.   </p>
+            </div>
+            <div class="program-col1">
+                <h3>Relief International</h3>
+                <p>This nonprofit works in 16 different countries to provide food, education, and medical care to “people in the world’s most fragile settings.”</p>
+            </div>
+            <div class="program-col1">
+                <h3>Cancer Research Institute</h3>
+                <p>It funds research on immunotherapy treatment for all types of cancer. Its programs include training for emerging cancer researchers.</p>
+            </div>
+        </div>
+        <div class="row2">
+            <div class="program-col2">
+                <h3>Hope for the Warriors</h3>
+                <p>Hope for the Warriors provides what it calls a full cycle of care to service members, veterans, and their families. </p>
+            </div>
+            <div class="program-col2">
+                <h3>Center for Reproductive Rights</h3>
+                <p>This nonprofit envisions a world where every woman is treated as an equal and is free to make crucial decisions related to her own reproductive health.</p>
+            </div>
+            <div class="program-col2">
+                <h3>The Alzheimer’s Association</h3>
+                <p>The Alzheimer’s Association aims to fight and cure Alzheimer’s Disease from all sides. The organization also advocates for Alzheimer’s research nationally and at the state level.</p>
+            </div>
+        </div>
+        <p><b>It’s easier to take than to give. It’s nobler to give than to take.The thrill of taking lasts a day.<br>The thrill of giving lasts a lifetime.</b></p>
+        <a href="https://rzp.io/l/cKp6VTc4" class="hero-btn red-btn">Donate</a>
+    </section>
+    
+    
+    <!------Footer--------->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Hope and Happiness through your support.<br>Asking for Money is hard, Charitable Charm makes it easy.</p>
+        <div class="icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>                 <i class="fab fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="far fa-heart"></i> by Kartiki Gangthade.</p>
+    </section>
+    <!------Javascript for toogle menu----->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+	<title>Payment Gateway Integration</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0ca17ace72.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="logo.JPG"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-window-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="programs.html">PROGRAM</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+    
+    <!--------Contact Us------->
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59946.74692579107!2d77.68333818291697!3d20.10600679730197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd16f93800cfe3b%3A0x173cddad58387750!2sDigras%2C%20Maharashtra%20445203!5e0!3m2!1sen!2sin!4v1642168132805!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fas fa-home"></i>
+                    <span>
+                        <h5>Charitable Charm Building,Tahasil Road</h5>
+                        <p>Digras, Yavatmal</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fas fa-phone"></i>
+                    <span>
+                        <h5>+91 7057163018</h5>
+                        <p>Monday to Saturday,10am to 6pm.</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fas fa-envelope-square"></i>
+                    <span>
+                        <h5>kartikigangthade@gmail.com</h5>
+                        <p>Email us your query.</p>
+                    </span>
+                </div>
+            </div>
+                <div class="contact-col">
+                    <form action="formhandler.php" method="post">
+                        <input type="text" name= "name" placeholder="Enter your name" required>
+                        <input type="email" name= "email" placeholder="Enter email address" required>
+                        <textarea rows="8" placeholder="Message" name= "message" required></textarea>
+                        <button type="submit" class="hero-btn red-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!------Footer--------->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Hope and Happiness through your support.<br>Asking for Money is hard, Charitable Charm makes it easy.</p>
+        <div class="icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>                 <i class="fab fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="far fa-heart"></i> by Kartiki Gangthade.</p>
+    </section>
+    <!------Javascript for toogle menu----->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
