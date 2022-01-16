@@ -1,3 +1,6 @@
+
+<!------------PHP code to receive the message from sender to the owner of website------->
+
 <?php
 $name = $_POST['name'];
 $visitor_email = $_POST['email'];
